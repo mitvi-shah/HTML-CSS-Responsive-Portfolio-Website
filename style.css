@@ -1,0 +1,335 @@
+.star{
+    margin-top: 15px;
+    vertical-align:middle;
+    font-size: 25px;
+}
+.stars{
+    font-size: 40px;
+    font-weight: bolder;    
+}
+.p-star{
+    margin-top: -15px;
+    padding-bottom: 13px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;   
+}
+/* -------------------------nav------------------------ */
+nav{
+    background-color: #081f31;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nav-container{
+    width: 70%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-ul li{
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline;
+    margin-left: 40px;
+}
+nav a, #menu-box a{
+    color: white;
+    text-decoration: none;
+}
+/* -------------------------profile------------------------ */
+.profile{
+    height: 600px;
+   color: white;
+    background-color: rgb(86, 185, 152);
+}
+#profile-img{
+    display: block;
+    margin: auto;
+    scale: 0.9;
+    padding-top: 80px;
+}
+#start{
+    margin: 0%;
+    font-size: 4rem;
+    font-weight: 850;
+}
+#p-web{
+    font-size: 20px;
+    font-weight: 530;
+}
+/* ---------------------portfolio------------------- */
+#pf-head{
+    position: relative;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+.po-text{
+    margin-bottom: 10px;
+}
+#portfolio{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-heading{
+    margin: 0px;
+}
+.port-images{
+    display: grid;
+    justify-content:center;
+}
+#container{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    width: 80%;
+}
+.port-images img{
+    height: 100%;
+    width: 100%; 
+}
+.main-heading{
+    font-size: 2.45rem;
+    font-weight: 800;
+    padding-top: 60px;
+    margin-bottom: -10px;
+}
+/* ------------about --------------- */
+#about{
+    color: white;
+    background-color: rgb(86, 185, 152);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.down{
+    padding-left: 7px;
+    margin-bottom: 35px;
+    border: 3px solid white;
+    height: 40px;
+    padding-right: 10px;
+    border-radius: 7px;
+    width: max-content;
+    padding-top: 10px;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+    scale: 0.9;
+}
+#download{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+/* ------------contact us--------------- */
+#contact{
+    height: 600px;
+    color: rgb(64, 60, 60);
+}
+form{
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    color: gray;
+}
+input, textarea{
+    border: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    opacity: 0.7;
+}
+#send{
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: 550;   
+    margin-left: 18px;
+}
+.btn{
+    background-color: rgb(86, 185, 152);
+    color: white;
+}
+/* ---------------------footer sec-1------------------------- */
+footer{
+    color: rgb(217, 208, 208);
+}
+.section-one{
+   background-color:#081f31;
+}
+.item{
+   border: 2.5px solid white;
+   border-radius: 50%;
+   padding: 15px 17px;
+   margin-left: 10px;
+}
+.section-one img{
+    height:20px;
+    width: 20px;
+}
+.links{
+   display: flex;
+}
+.section-one p{
+   font-size: 17px;
+   font-weight: bold;
+   margin: 0;
+}
+/* ---------------------------------------section 2---------------------------- */
+.section-two{
+    height: 50px;
+    background-color:#081621;
+}
+.section-two p{
+    margin: 0%;
+    padding: 15px;
+    font-size: 14px;
+}
+.section-one a{
+    text-decoration: none;
+    color: rgb(86, 185, 152);
+}
+/* ----------------------------------------------***---------------------------------------- */
+#menu-btn{
+    padding: 5px  ;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 35px;
+    width: 70px; 
+}
+#menu-box{
+    text-align: left;   
+    background-color: #081f31;
+    z-index: 1;
+}
+#menu-box ul{
+    margin: 0%;
+    padding: 10px ;
+}
+#menu-box ul li{
+    display: block;
+    margin: 15px 5px;
+}
+/* ----------------------------------RESPONSIVE portfolio--------------------------------------------- */
+
+@media only screen and (min-width : 426px) and (max-width:768px) {
+    .port-images{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media only screen and (min-width : 769px) {
+    .port-images{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+/* ----------------------------------RESPONSIVE contact us--------------------------------------------- */
+@media only screen and (max-width: 425px) {
+    nav{
+        height: 50px;
+       }
+       nav span{
+        font-size: 1.2rem;
+        font-weight: 800;
+        }
+        nav ul {
+            display: none;
+        }
+        .nav-container{
+            width: 85%;
+        }
+    .port-images{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    #container{
+        width: 90%;
+    }
+    .po-text{
+        padding-top: 15px;
+    }
+    #about-col p{
+        line-height: 23px ; 
+         font-size: 17px;
+        font-weight: 600;
+        width: 90%;
+        text-align: left;
+        margin: auto;
+        padding-bottom: 20px; 
+    }
+    .about-container{
+        width: 100%;
+    }
+    #contact{
+        height: 750px;
+    }
+    input, textarea{
+        padding: 10px;
+    }
+    form{
+        width: 95%;
+        font-size: large;
+    }
+    .box{
+        display: block;
+        padding: 20px  30px 20px ;
+    }
+    .location{
+        padding-top: 50px;
+    }
+    .freelancer{
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 426px) {
+    nav span{
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    nav{
+        height: 80px;
+       }
+    #menu-btn{
+        display: none;  
+    }
+    #menu-box{
+        display: none;
+    }
+    #about-col p{
+    line-height: 25px ;
+    font-size: large;
+    font-weight: 550;
+    width: 50%;
+    text-align: left;
+    padding: 0 20px; 
+    }
+    .about-container{
+        width: 70%;
+    }
+    #about-col{
+        display: flex;
+    }
+    #contact{
+        height: 650px;
+    }
+    .section-one{
+        height: 250px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
